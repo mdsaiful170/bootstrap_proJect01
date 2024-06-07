@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Creatives for you</title>
+
+    <!-- website logo tab -->
+    <link rel="icon" href="./images/lopg-tab.png" ">
+
+    <link rel="stylesheet" href="./css/styel.css">
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fonts link -->
+
+ 
+
+</head>
+
+<body>
+
+    <!-- ----header sectoin--- -->
+    <nav class="navbar  navbar-expand-lg border-bottom bg-body-tertiary">
+        <div class="container-xl py-2">
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="">
+            </a>
+            <!-- ---search box button-- -->
+            <ul class="navbar-nav mx-auto  gap-3 d-md-flex d-lg-flex align-items-center nav_box">
+                <li class="nav-item "><a class="nav-link fs-4 active text-danger" href="#home">Home</a></li>
+                <li class="nav-item "><a class="nav-link fs-4 " href="#about">AboutUs</a></li>
+                <li class="nav-item "><a class="nav-link fs-4 " href="#Upskills">Upskills</a></li>
+                <li class="nav-item "><a class="nav-link fs-4 " href="#Contact Us">Contact Us</a></li>
+            </ul>
+
+            <!-- --regist box button -- -->
+            <div class=" d-flex align-items-center gap-lg-3 gap-2 justify-content-between">
+                <button type="button" class="btn   btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#register">Register Interest</button>
+
+
+                <button type="button" class="btn  btn-danger me-lg-0 me-2" data-bs-toggle="modal"
+                    data-bs-target="#serchbox">search</button>
+
+                <div class="d-block d-lg-none border " style="cursor: pointer;" id="bars_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <!-- ---serch modal box -->
+            <div class="modal  fade" id="serchbox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen " style="z-index: 10000 !;">
+                    <div class="modal-content bg-secondary bg-opacity-50">
+                        <div class="modal-header px-5">
+                            <h5 class="modal-title h3 text-white">search here</h5>
+                            <button class="btn-close bg-danger" type="button" data-bs-dismiss="modal"
+                                aria-label="close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <div class="row  gx-4 p-5 justify-content-end  align-items-end " style="height: 200px;">
+                                <div class="col">
+                                    <div class="input-group ">
+                                        <input type="search" name="serch" class="form-control border border-dark"
+                                            placeholder="serch here........">
+                                        <labe30 for="serch" class="input-group-text border border-dark"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg></labe30 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- register box -->
+            <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content bg-dark bg-opacity-75">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">register box</h1>
+                            <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text text-white">We'll never share your email with
+                                        anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label text-white">Confirm
+                                        Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">SinIn</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <!-- --nav section end-- -->
+
+
+    <!-- .hero-section -->
+    <main class="container-xl">
+
+        <!-- ---home section part-- -->
+        <div class="row mx-auto py-4 mb-5 align-items-md-center justify-content-center">
+            <div class="col-12 col-md-6 gap5">
+                <div class="img-box">
+                    <h5 class="text-danger"><span class="text-dark">Discover</span> - <span
+                            class="text-dark">Interact</span> - <span class="text-dark">Engage</span> </h5>
+                    <h1 class="text-dark fw-bolder mb-4  lh-sm display-4">connecting talent <br> to opportunities
+                        through
+                        <span class="text-danger">skills.</span>
+                    </h1>
+                    <p class="fs-4 lh-base mb-5 pt-3">We personalise your path towards in demand Job Roles that
+                        specially
+                        match your Skill Set. </p>
+
+                    <a href="#" class="btn btn-danger py-3 px-4 fs-6 fw-light">Sing up</a>
+                    <a href="#" class="btn btn-outline-secondary ms-4 px-5 py-3 fs-6 fw-light text-dark">learn more</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box-img">
+                    <img src="images/banner1.png" class="object-fit-cover img-fluid h-100 w-100" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--collebration section-->
+        <div class="bg-white py-4 text-center w-100">
+            <div class="container mx-auto z-1">
+                <p class="pt-2">To provide Students with the best solution, we are in <span
+                        class="fw-bold">collaboration</span>
+                    with</p>
+                <img src="images/collaboration.png" alt="" class="object-fit-cover w-100 pt-4 pb-3">
+            </div>
+        </div>
+
+
+        <!--did you know section-->
+        <div class="container mx-auto py-5">
+            <h3 class="fw-bold">Did you know?</h3>
+            <p class="pt-2">We’ve been really busy this year solving problems students are facing across the country.
+            </p>
+            <div class="border border-2 mt-3 mb-3 mt-md-5"></div>
+
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h2 class="large-text pt-4">87%</h2>
+                    <p class="text-danger">Employers</p>
+                    <p>believe that new graduates lack wider skills</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="large-text pt-4">85%</h2>
+                    <p class="text-danger">Students</p>
+                    <p>are not confident in writing a CV</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="large-text pt-4">68%</h2>
+                    <p class="text-danger">Corporations</p>
+                    <p>Feel graduates are ill-prepared in someway</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h2 class="large-text pt-4">48%</h2>
+                    <p class="text-danger">Students</p>
+                    <p>are worried about their future employment</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--how it work section-->
+        <div class="bg-white w-100 d-flex justify-content-between">
+            <img src="images/Decoration.png" alt="" class="d-md-block w-25 object-fit-cover d-none">
+
+            <div class="text-center py-5 pt-md-5">
+                <p class="fw-bold fs-5 mt-md-5">
+                    Follow our path to make your dream career, your reality ...
+                </p>
+                <h3 class="large-text">How it works?</h3>
+            </div>
+            <img src="images/Decoration.png" alt="" class="d-md-block w-25 object-fit-cover d-none">
+        </div>
+
+
+
+        <!-- ---Discover Your Skills-- -->
+        <div class=" mx-auto mt-5 ">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                    <h2 class="fw-bold display-4 pb-2">Discover Your Skills</h2>
+                    <p class="fs-6 fw-light pb-3">Uncover skills developed through your life and work experiences.</p>
+                    <a href="#" class="btn btn-danger py-2 px-3">register interest</a>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/skills.png" class="w-100 h-100 object-fit-cover" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- --section--end -->
+
+
+        <!--develop section-->
+        <div class="container mx-auto">
+            <div class="row gap-5 gap-md-0 py-5">
+
+                <div class="col-12 col-md-6">
+                    <img src="images/develop.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <div class="col-12 col-md-6 py-5 my-5">
+                    <h1 class="large-text fw-bold">
+                        Develop Commercial Awareness
+                    </h1>
+                    <p class="fs-5 fw-bold text-secondary">Explore in-demand Job Roles and identify your transferable
+                        skills.</p>
+                    <button class="btn btn-danger btn-lg" type="submit">Register Now</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--job ready section-->
+        <div class="container mx-auto">
+            <div class="row gap-5 gap-md-0 py-5">
+                <div class="col-12 col-md-6 py-5 my-5">
+                    <h1 class="large-text fw-bold">
+                        Become Job Ready
+                    </h1>
+                    <p class="fs-5 fw-bold text-secondary">Upskill and broaden your employability skills to an in-demand
+                        career.</p>
+                    <button class="btn btn-danger btn-lg" type="submit">Register Now</button>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="images/job-ready.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+
+
+        <!--network section-->
+        <div class="container mx-auto">
+            <div class="row gap-5 gap-md-0 py-5">
+                <div class="col-12 col-md-6">
+                    <img src="images/network.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <div class="col-12 col-md-6 py-5 my-5">
+                    <h1 class="fw-bolder">
+                        Widen Your Network
+                    </h1>
+                    <p class="fs-5 fw-bold text-secondary">Fast track your career growth by developing meaningful
+                        connections.</p>
+                    <button class="btn btn-danger btn-lg" type="submit">Register Now</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--cv section-->
+        <div class="container mx-auto">
+            <div class="row gap-5 gap-md-0 py-5">
+
+
+                <div class="col-12 col-md-6 py-5 my-5">
+                    <h1 class="large-text fw-bold">
+                        Tailor-made CV
+                    </h1>
+                    <p class="fs-5 fw-bold text-secondary">Fast Curate your CV personalised to your Ideal Job Role.</p>
+
+                    <div class="d-flex gap-3 align-items-center">
+                        <p class="my-auto">Interested?</p>
+                        <img src="images/like.png" alt="">
+                        <img src="images/dislike.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="images/cv.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+
+
+            </div>
+        </div>
+
+        <!--career section-->
+        <div class="container mx-auto">
+            <div class="row gap-5 gap-md-0 py-5">
+                <div class="col-12 col-md-6">
+                    <img src="images/career.png" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <div class="col-12 col-md-6 py-5 my-5">
+                    <h1 class="large-text fw-bold">
+                        Land Your Career
+                    </h1>
+                    <p class="fs-5 fw-bold text-secondary">Bringing bespoke job opportunties based on your set of
+                        skills.</p>
+                    <div class="d-flex gap-3 align-items-center">
+                        <p class="my-auto">Interested?</p>
+                        <img src="images/like.png" alt="">
+                        <img src="images/dislike.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--testmonial section-->
+        <div class="position-relative">
+            <div class="container mx-auto">
+                <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+
+                    <div>
+
+                        <h3 class="fw-bold fs-2">
+                            Our customers keep talking
+                        </h3>
+
+                        <p class="text-secondary">Listen to what they say about our product offering right here</p>
+
+                    </div>
+
+                    <button class="btn btn-danger btn-lg">Join the conversation</button>
+
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between gap-4 pt-5 pb-5">
+                    <div class="w-33 p-4 bg-white rounded-5">
+                        <img src="images/test.png" alt="">
+                        <p class="fs-4 pt-2 pb-2">To be able to connect with, and be exposed to other people with other
+                            skills and
+                            different ideas is the starting point of creating something new</p>
+                        <h5>Ossian Radovini</h5>
+                        <p>Student at Bath Spa University</p>
+                    </div>
+                    <div class="w-33 p-4 bg-white rounded-5">
+                        <img src="images/test.png" alt="">
+                        <p class="fs-4 pt-2 pb-2">To be able to connect with, and be exposed to other people with other
+                            skills and
+                            different ideas is the starting point of creating something new</p>
+                        <h5>Ossian Radovini</h5>
+                        <p>Student at Bath Spa University</p>
+                    </div>
+                    <div class="w-33 p-4 bg-white rounded-5">
+                        <img src="images/test.png" alt="">
+                        <p class="fs-4 pt-2 pb-2">To be able to connect with, and be exposed to other people with other
+                            skills and
+                            different ideas is the starting point of creating something new</p>
+                        <h5>Ossian Radovini</h5>
+                        <p>Student at Bath Spa University</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/Decoration.png" class="position-absolute bottom-0 end-0 z-n1" alt="">
+        </div>
+
+
+
+        <!-- ---footer section --- -->
+        <div class="container border-bottom px-5 px-md-0 mx-auto py-5">
+            <div class="row g-2">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 pb-md-0">
+                    <img src="images/logo.png" class="" alt="">
+                    <p class="fs-6 fw-semibold mt-4">
+                        Level39,<br>
+                        One Canada Square,<br>
+                        Canary Wharf,<br>
+                        London,<br>
+                        E14 5AB,<br>
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="row g-3 align-items-md-end align-items-md-start align-itmes-start">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-3 pb-md-0">
+                                <h6 class="fw-bold pb-3">home</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="nav-link mt-2" href="#">Collaborations </a></li>
+                                    <li><a class="nav-link mt-2" href="#">Statistics</a></li>
+                                    <li><a class="nav-link mt-2" href="#">How It Works</a></li>
+                                    <li><a class="nav-link mt-2" href="#">Testimonials</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-3 pb-md-0">
+                                <h6 class="fw-bold pb-3">About US</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="nav-link mt-2" href="#">Who we are </a></li>
+                                    <li><a class="nav-link mt-2" href="#">Mission statement </a></li>
+                                    <li><a class="nav-link mt-2" href="#">Our Vision </a></li>
+                                    <li><a class="nav-link mt-2" href="#">The Team </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-3 pb-md-0">
+                                <h6 class="fw-bold pb-3">UpSkill</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="nav-link mt-2" href="#">It Support </a></li>
+                                    <li><a class="nav-link mt-2" href="#">Project Managment </a></li>
+                                    <li><a class="nav-link mt-2" href="#">Data Analysts</a></li>
+                                    <li><a class="nav-link mt-2" href="#">Ux Design</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 pb-3 pb-md-0">
+                                <h6 class="fw-bold pb-3">Contact Us</h6>
+                                <ul class="list-unstyled">
+                                    <li><a class="nav-link mt-2" href="#">Your message </a></li>
+                                    <li><a class="nav-link mt-2" href="#">Email</a></li>
+                                    <li><a class="nav-link mt-2" href="#">Phone number</a></li>
+                                    <li><a class="nav-link mt-2" href="#">Linkedin </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --footter end -->
+
+
+
+
+        <!-- ---creator section-- -->
+        <div class="mx-auto container py-3">
+            <p class="text-center fw-lighter text-capitalize">Copyright 2024 Created by <span
+                    class="text-dark fw-bold">Md Saiful Islam🙂||all is well</span></p>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- ---constom js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        window.onscroll = () => {
+            navBox.classList.remove('active');
+        }
+        let navBox = document.querySelector('.nav_box');
+        let barsBtn = document.querySelector('#bars_btn');
+
+        document.querySelector('#bars_btn').onclick = () => {
+            navBox.classList.toggle('active');
+        }
+
+    </script>
+
+
+</body>
+
+</html>
